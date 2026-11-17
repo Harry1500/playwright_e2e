@@ -1,9 +1,14 @@
 {
   "name": "playwright_e2e",
   "version": "1.0.0",
-  "description": "",
+  "description": "Playwright E2E testing framework with AI capabilities Incld MCP",
   "main": "index.js",
-  "scripts": {},
+  "scripts": {
+  
+    "Login": "npx.cmd playwright test tests/funtional/login.spec.ts --headed",
+    "demo": "npx.cmd playwright test tests/demo/mytest.spec.ts --headed"
+
+  },
   "keywords": [],
   "author": "",
   "license": "ISC",
