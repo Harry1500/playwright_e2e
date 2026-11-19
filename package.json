@@ -4,10 +4,14 @@
   "description": "Playwright E2E testing framework with AI capabilities Incld MCP",
   "main": "index.js",
   "scripts": {
-  
+    "Inventory": "npx.cmd playwright test tests/funtional/inventory.spec.ts --headed",
+    "debug:ui": "npx.cmd playwright test tests/demo/makeapptmt.spec.ts --ui --headed",
+    "Makeapptmtdemo": "npx.cmd playwright test tests/demo/makeapptmt.spec.ts --headed",
+    "debug:cli": "PWDEBUG=1 npx.cmd playwright test tests/demo/makeapptmt.spec.ts",
+    "Assignment1": "npx.cmd playwright test tests/funtional/Assignment1.spec.ts --headed",
     "Login": "npx.cmd playwright test tests/funtional/login.spec.ts --headed",
+    "MakeAppointment": "npx.cmd playwright test tests/funtional/MakeAppointment.spec.ts --headed",
     "demo": "npx.cmd playwright test tests/demo/mytest.spec.ts --headed"
-
   },
   "keywords": [],
   "author": "",
@@ -15,6 +19,7 @@
   "type": "commonjs",
   "devDependencies": {
     "@playwright/test": "^1.65.1",
-    "@types/node": "^26.6.6"
+    "@types/node": "^26.6.6",
+    "allure-playwright": "^3.15.0"
   }
 }
